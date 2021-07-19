@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<!---
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>clock</title>
+<link rel="stylesheet" href="PATH TO YOUR STYLESHEET">
+</head>
+--->
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+<script>
+  
+/*
+foundation from https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
+*/
+
+function startTime() {
+  const now = new Date(); //new Date object
+  let h = now.getUTCHours();
+  let m = now.getUTCMinutes();
+  let s = now.getUTCSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  //setTimeout(startTime, 1000);
+}
+
+let name;
+switch(startTime.h){
+	case 12:
+		name="ZULU";
+		break;
+	case 11:
+		name="ALPHA";
+		break;
+	case 10:
+		name="BRAVO";
+		break;
+	case 9:
+		name="CHARLIE";
+		break;
+	case 8:
+		name="DELTA";
+		break;
+	case 7:
+		name="ECHO";
+		break;
+	case 6:
+		name="FOXTROT";
+		break;
+	case 5:
+		name="GOLF";
+		break;
+	case 4:
+		name="HOTEL";
+		break;
+	/* INDIA is skipped */
+	case 3:
+		name="JULIET";
+		break;
+	case 2:
+		name="KILO";
+		break;
+	case 1:
+		name="LIMA";
+		break;
+	case 0:
+		name="MIKE";
+		break;
+	case 23:
+		name="NOVEMBER";
+		break;
+	case 22:
+		name="OSCAR";
+		break;
+	case 21:
+		name="PAPA";
+		break;
+	case 20:
+		name="QUEBEC";
+		break;
+	case 19:
+		name="ROMEO";
+		break;
+	case 18:
+		name="SIERRA";
+		break;
+	case 17:
+		name="TANGO";
+		break;
+	case 16:
+		name="UNIFORM";
+		break;
+	case 15:
+		name="VICTOR";
+		break;
+	case 14:
+		name="WHISKEY";
+		break;
+	case 13:
+		name="X-RAY";
+		break;
+	/*YANKEE is the same as MIKE but offset by 24h.*/
+	}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add leading zeroes
+  return i;
+}
+
+</script>
+
+</body>
+</html>
+
