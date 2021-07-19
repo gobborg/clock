@@ -104,7 +104,7 @@ function startTime() {
 	let s = now.getUTCSeconds();
 	m = checkTime(m);
 	s = checkTime(s);
-	document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+	document.getElementById('txt').innerHTML =  name + ":" + m + ":" + s;
 	setTimeout(startTime, 1000); //keeps the clock actively ticking
 }
 
