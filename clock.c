@@ -61,37 +61,37 @@ switch(hournames){
 		name="MIKE";
 		break;
 	case 23:
-		name="NOVEMBER";
+		name="X-RAY";
 		break;
 	case 22:
-		name="OSCAR";
+		name="WHISKEY";
 		break;
 	case 21:
-		name="PAPA";
+		name="VICTOR";
 		break;
 	case 20:
-		name="QUEBEC";
+		name="UNIFORM";
 		break;
 	case 19:
-		name="ROMEO";
+		name="TANGO";
 		break;
 	case 18:
 		name="SIERRA";
 		break;
 	case 17:
-		name="TANGO";
+		name="ROMEO";
 		break;
 	case 16:
-		name="UNIFORM";
+		name="QUEBEC";
 		break;
 	case 15:
-		name="VICTOR";
+		name="PAPA";
 		break;
 	case 14:
-		name="WHISKEY";
+		name="OSCAR";
 		break;
 	case 13:
-		name="X-RAY";
+		name="NOVEMBER";
 		break;
 	/*YANKEE is the same as MIKE but offset by 24h.*/
 	}
